@@ -258,6 +258,8 @@ html.js .reveal.in-view {
 .site-header.scrolled .header-inner { min-height: 62px; }
 
 .brand-logo {
+  flex: none;
+  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -281,12 +283,14 @@ html.js .reveal.in-view {
   letter-spacing: -0.02em;
   color: var(--text);
 }
+.brand-title, .brand-subtitle { white-space: nowrap; }
 .brand-subtitle {
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--text-subtle);
 }
 
+.nav-link { white-space: nowrap; }
 .nav-menu {
   display: flex;
   align-items: center;
@@ -354,6 +358,8 @@ html.js .reveal.in-view {
 .header-cta {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
+  flex: none;
   gap: 0.5rem;
   background: var(--accent-soft);
   color: var(--accent-bright);
@@ -416,6 +422,17 @@ html.js .reveal.in-view {
   .nav-link:hover, .nav-link.active { background: rgba(255, 255, 255, 0.05); }
   .mobile-toggle { display: grid; }
   .header-cta { display: none; }
+}
+
+@media (max-width: 1340px) and (min-width: 901px) {
+  .nav-menu { gap: 0.15rem; }
+  .nav-link { font-size: 0.82rem; padding-left: 0.25rem; padding-right: 0.25rem; }
+  .header-inner { gap: 0.6rem; }
+  .header-right { gap: 0.5rem; }
+  .brand-subtitle { display: none; }
+  .brand-title { font-size: 1rem; }
+  .header-cta { font-size: 0.8rem; padding: 0.5rem 0.8rem; }
+  .lang-toggle .lang-btn { font-size: 0.75rem; }
 }
 
 /* ---------- Hero ---------- */
