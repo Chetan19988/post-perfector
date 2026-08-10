@@ -258,6 +258,8 @@ html.js .reveal.in-view {
 .site-header.scrolled .header-inner { min-height: 62px; }
 
 .brand-logo {
+  flex: none;
+  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -428,6 +430,7 @@ html.js .reveal.in-view {
   .header-inner { gap: 0.6rem; }
   .header-right { gap: 0.5rem; }
   .brand-subtitle { display: none; }
+  .brand-title { font-size: 1rem; }
   .header-cta { font-size: 0.8rem; padding: 0.5rem 0.8rem; }
   .lang-toggle .lang-btn { font-size: 0.75rem; }
 }
