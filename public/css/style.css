@@ -281,6 +281,7 @@ html.js .reveal.in-view {
   letter-spacing: -0.02em;
   color: var(--text);
 }
+.brand-title, .brand-subtitle { white-space: nowrap; }
 .brand-subtitle {
   font-size: 0.72rem;
   font-weight: 500;
@@ -354,6 +355,8 @@ html.js .reveal.in-view {
 .header-cta {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
+  flex: none;
   gap: 0.5rem;
   background: var(--accent-soft);
   color: var(--accent-bright);
