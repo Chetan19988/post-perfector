@@ -612,17 +612,27 @@ html.js .reveal.in-view {
 }
 
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-visual { order: -1; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
   .hero-stage { max-width: 100%; }
   .float-chip.chip-3 { display: none; }
+
+  /* Mobile order: H1 -> paragraph -> CTAs, illustration & badge removed
+     so the rental plans section appears immediately after. */
+  .hero-visual { display: none; }
+  .hero-grid > .reveal:first-child { display: flex; flex-direction: column; }
+  .hero-grid .hero-badge { display: none; }
+  .hero-grid .hero-title { order: 1; margin-top: 0; }
+  .hero-grid .hero-subtitle { order: 2; }
+  .hero-grid .hero-actions { order: 3; }
+  .hero-grid .hero-trust { order: 4; }
 }
 
 @media (max-width: 480px) {
-  .hero-section { padding: 3.2rem 0 3rem; }
+  .hero-section { padding: 2.2rem 0 2rem; }
   .hero-actions .btn { width: 100%; }
   .float-chip { padding: 0.55rem 0.8rem; }
 }
+
 
 /* ---------- Generic section scaffolding ---------- */
 .section {
