@@ -425,8 +425,8 @@ html.js .reveal.in-view {
 }
 
 @media (max-width: 1200px) and (min-width: 901px) {
-  .nav-menu { gap: 0.55rem; }
-  .nav-link { font-size: 0.85rem; }
+  .nav-menu { gap: 0.15rem; }
+  .nav-link { font-size: 0.82rem; padding-left: 0.25rem; padding-right: 0.25rem; }
   .header-inner { gap: 0.6rem; }
   .header-right { gap: 0.5rem; }
   .brand-subtitle { display: none; }
