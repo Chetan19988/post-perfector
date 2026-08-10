@@ -116,7 +116,7 @@
           <h2 class="section-heading" style="margin-bottom: 0.5rem;">Quick Booking Inquiry</h2>
           <p class="form-card-subtitle">Select your required forklift tonnage and dates to send an instant inquiry to our WhatsApp helpline:</p>
 
-          <form id="contactFormInquiry" onsubmit="event.preventDefault(); openReserveModal('5 Ton');">
+          <form id="contactFormInquiry" onsubmit="event.preventDefault(); openReserveModal('3 Ton');">
             <div class="form-group">
               <label class="form-label" for="inquiryLocation">Required Location in Delhi NCR</label>
               <input type="text" class="form-control" id="inquiryLocation" placeholder="e.g. Noida Sector 63 / Okhla Phase 3 / Sahibabad" required />
@@ -124,8 +124,8 @@
             <div class="form-group">
               <label class="form-label" for="inquiryTon">Required Tonnage</label>
               <select class="form-control" id="inquiryTon">
-                <option>3 Ton Diesel Forklift</option>
-                <option selected>5 Ton Diesel Forklift</option>
+                <option selected>3 Ton Diesel Forklift</option>
+                <option>5 Ton Diesel Forklift</option>
                 <option>10 Ton Heavy Forklift</option>
               </select>
             </div>
@@ -220,7 +220,7 @@
         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
         Call Now
       </a>
-      <button type="button" onclick="openReserveModal('5 Ton')" class="btn btn-whatsapp">
+      <button type="button" onclick="openReserveModal('3 Ton')" class="btn btn-whatsapp">
         Reserve WhatsApp
       </button>
     </div>
@@ -241,8 +241,8 @@
         <div class="form-group">
           <label class="form-label" for="tonSelect">Selected Capacity</label>
           <select class="form-control" id="tonSelect" required>
-            <option value="3 Ton">3 Ton Diesel Forklift</option>
-            <option value="5 Ton">5 Ton Diesel Forklift (Most Popular)</option>
+            <option value="3 Ton" selected>3 Ton Diesel Forklift (Most Popular)</option>
+            <option value="5 Ton">5 Ton Diesel Forklift</option>
             <option value="10 Ton">10 Ton Diesel Forklift</option>
           </select>
         </div>
