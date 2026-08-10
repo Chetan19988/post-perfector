@@ -288,6 +288,7 @@ html.js .reveal.in-view {
   color: var(--text-subtle);
 }
 
+.nav-link { white-space: nowrap; }
 .nav-menu {
   display: flex;
   align-items: center;
@@ -419,6 +420,11 @@ html.js .reveal.in-view {
   .nav-link:hover, .nav-link.active { background: rgba(255, 255, 255, 0.05); }
   .mobile-toggle { display: grid; }
   .header-cta { display: none; }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .nav-menu { gap: 1rem; }
+  .header-inner { gap: 0.75rem; }
 }
 
 /* ---------- Hero ---------- */
