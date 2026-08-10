@@ -1,5 +1,5 @@
 /**
- * Chetan Lifters - Language Detection, Persistence & Navigation Router
+ * Chetan Crane Service - Language Detection, Persistence & Navigation Router
  */
 
 (function () {

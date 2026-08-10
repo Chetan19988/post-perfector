@@ -1,5 +1,5 @@
 /**
- * Chetan Lifters — Main Application JavaScript
+ * Chetan Crane Service — Main Application JavaScript
  * Premium interactions: scroll reveal, animated counters, sticky header,
  * mobile menu, reserve modal, FAQ accordion, floating WhatsApp + back-to-top.
  */
@@ -136,13 +136,13 @@
 
         var isHindi = window.location.pathname.indexOf("/hi/") === 0;
         var message = isHindi
-          ? "*फोर्कलिफ्ट रिज़र्व – चेतन लिफ्टर्स*\n" +
+          ? "*फोर्कलिफ्ट रिज़र्व – चेतन क्रेन सर्विस*\n" +
             "फोर्कलिफ्ट: " + ton + "\n" +
             "शुरुआत: " + start + "\n" +
             "समाप्ति: " + end + "\n" +
             "फ़ोन: " + phone + "\n" +
             "---\nकृपया उपलब्धता कन्फर्म करें।"
-          : "*Forklift Reserve – Chetan Lifters*\n" +
+          : "*Forklift Reserve – Chetan Crane Service*\n" +
             "Forklift: " + ton + "\n" +
             "Start: " + start + "\n" +
             "End: " + end + "\n" +
@@ -294,7 +294,7 @@
       var link = document.createElement("a");
       link.className = "wa-float";
       link.href = "https://wa.me/917982773422?text=" +
-        encodeURIComponent("Hello Chetan Lifters, I need a forklift rental quote.");
+        encodeURIComponent("Hello Chetan Crane Service, I need a forklift rental quote.");
       link.target = "_blank";
       link.rel = "noopener";
       link.setAttribute("aria-label", "Chat on WhatsApp");
