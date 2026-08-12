@@ -45,7 +45,7 @@
     let path = window.location.pathname;
     const isHi = path.indexOf('/hi/') === 0;
     let filename = path.substring(path.lastIndexOf('/') + 1);
-    if (!filename) filename = 'home.html';
+    if (filename === 'index.html') filename = '';
 
     if (targetLang === 'hi') {
       if (isHi) return path;
