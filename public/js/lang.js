@@ -49,7 +49,7 @@
 
     if (targetLang === 'hi') {
       if (isHi) return path;
-      return '/hi/' + filename;
+      return '/hi/' + (filename || 'index.html');
     } else {
       if (!isHi) return path;
       return '/' + filename;
