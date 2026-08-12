@@ -2,25 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage Pairs -->
   <url>
     <loc>https://forkliftforrent.in/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/"/>
     <priority>1.0</priority>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://forkliftforrent.in/hi/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/"/>
-    <priority>1.0</priority>
-    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Services / Plans Pairs -->
   <url>
     <loc>https://forkliftforrent.in/services.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/services.html"/>
@@ -34,17 +32,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/services.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/services.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/services.html"/>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- About Pairs -->
   <url>
     <loc>https://forkliftforrent.in/about.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/about.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/about.html"/>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -52,11 +49,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/about.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/about.html"/>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Contact Pairs -->
   <url>
     <loc>https://forkliftforrent.in/contact.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/contact.html"/>
@@ -70,43 +66,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/contact.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/contact.html"/>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- FAQ Pairs -->
   <url>
     <loc>https://forkliftforrent.in/faq.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/faq.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/faq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/faq.html"/>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://forkliftforrent.in/hi/faq.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/faq.html"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/faq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/faq.html"/>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://forkliftforrent.in/operator-jobs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/operator-jobs.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/operator-jobs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/operator-jobs.html"/>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
-
-  <!-- Operator Jobs Pairs -->
   <url>
-    <loc>https://forkliftforrent.in/forklift-operator-jobs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/forklift-operator-jobs.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/forklift-operator-jobs.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/forklift-operator-jobs.html"/>
-    <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://forkliftforrent.in/hi/forklift-operator-jobs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/forklift-operator-jobs.html"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/forklift-operator-jobs.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/forklift-operator-jobs.html"/>
-    <priority>0.9</priority>
+    <loc>https://forkliftforrent.in/hi/operator-jobs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forkliftforrent.in/operator-jobs.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://forkliftforrent.in/hi/operator-jobs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forkliftforrent.in/operator-jobs.html"/>
+    <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
