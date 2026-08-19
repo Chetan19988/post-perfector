@@ -1576,3 +1576,45 @@ select.form-control option { background: var(--bg-card); color: var(--text); }
   .prose-block { font-size: 0.98rem; line-height: 1.8; }
   .prose-block h3 { font-size: 1.08rem; }
 }
+
+/* ---- Footer map ---- */
+.footer-map {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.footer-map-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.map-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 35%;
+  min-height: 260px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: #1a2332;
+}
+.map-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.footer-map-address {
+  margin-top: 0.875rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+@media (max-width: 900px) {
+  .map-wrap { padding-bottom: 50%; min-height: 240px; }
+}
+@media (max-width: 640px) {
+  .map-wrap { padding-bottom: 70%; min-height: 220px; }
+  .footer-map { margin-top: 2rem; padding-top: 1.5rem; }
+}
+
