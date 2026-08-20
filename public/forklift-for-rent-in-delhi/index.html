@@ -19,6 +19,101 @@
   <script src="/js/lang.js"></script>
   <link rel="stylesheet" href="/css/style.css" />
 
+  <style>
+    /* --- Coverage Grid Section (New UI) --- */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .coverage-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coverage-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+      border-color: #cbd5e1;
+    }
+
+    .coverage-zone {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+      width: fit-content;
+      margin-bottom: 0.75rem;
+    }
+
+    .coverage-area {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 1rem 0;
+      line-height: 1.3;
+    }
+
+    .coverage-time {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: #0056b3; 
+      font-size: 0.95rem;
+    }
+
+    .coverage-time svg {
+      color: #ef4444; 
+    }
+
+    .coverage-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      padding: 1.25rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .coverage-footer p {
+      margin: 0;
+      color: #334155;
+      font-size: 1rem;
+    }
+
+    .coverage-footer svg {
+      color: #10b981; 
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .coverage-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Chetan Crane Service Pvt Ltd" />
   <meta property="og:locale" content="en_IN" />
@@ -109,10 +204,10 @@
             <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           </div>
           <div class="plan-capacity">3 Ton Diesel Forklift</div>
-          <p class="plan-desc">Our best-selling plan in Delhi — from ₹2,500* per shift with a trained operator included.</p>
+          <p class="plan-desc">Our best-selling plan in Delhi — from INR 2,500* per shift with a trained operator included.</p>
           <ul class="plan-specs">
             <li><svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg><span><strong>Capacity:</strong> 3,000 kg (3 Ton)</span></li>
-            <li><svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg><span><strong>Starting Rate:</strong> From ₹2,500* per 8-hour shift</span></li>
+            <li><svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg><span><strong>Starting Rate:</strong> From INR 2,500* per 8-hour shift</span></li>
             <li><svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg><span><strong>Ideal For:</strong> Warehouses, loading bays, container packing, palletised stock</span></li>
             <li><svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg><span><strong>Driver:</strong> Trained operator included 24×7</span></li>
           </ul>
@@ -171,35 +266,106 @@
     </div>
   </section>
 
+  <!-- REPLACED COVERAGE SECTION -->
   <section class="section">
     <div class="container">
       <div class="section-title-wrap reveal">
         <div class="section-tag">Coverage</div>
         <h2 class="section-title">Major Industrial Areas We Serve</h2>
       </div>
-      <div class="prose-block reveal">
-        <p>Our Ghazipur base sits on the Delhi–UP border, so we reach most industrial belts in the city quickly. Typical dispatch coverage:</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Industrial Area</th>
-              <th>Zone</th>
-              <th>Typical Reach Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Patparganj Industrial Area</td><td>East Delhi</td><td>~30 minutes</td></tr>
-            <tr><td>Yamuna Vihar</td><td>North East Delhi</td><td>~40 minutes</td></tr>
-            <tr><td>Okhla Industrial Area (Phase 1, 2 &amp; 3)</td><td>South East Delhi</td><td>~45 minutes</td></tr>
-            <tr><td>AIIMS &amp; South Delhi institutions</td><td>South Delhi</td><td>~50 minutes</td></tr>
-            <tr><td>Kirti Nagar</td><td>West Delhi</td><td>~60 minutes</td></tr>
-            <tr><td>Mayapuri Industrial Area Phase 1 &amp; 2</td><td>West Delhi</td><td>~60 minutes</td></tr>
-            <tr><td>Mangolpuri Industrial Area</td><td>North West Delhi</td><td>~70 minutes</td></tr>
-            <tr><td>Bawana Industrial Area</td><td>Outer North Delhi</td><td>~80 minutes</td></tr>
-            <tr><td>Narela Industrial Area</td><td>Outer North Delhi</td><td>~85 minutes</td></tr>
-          </tbody>
-        </table>
-        <p>We also dispatch to Noida, Greater Noida, Ghaziabad, Gurgaon and Faridabad on the same day.</p>
+      
+      <div class="prose-block reveal" style="text-align: center; margin-bottom: 2rem;">
+        <p>Our Ghazipur base sits on the Delhi–UP border, allowing us to reach most industrial belts in the city quickly. Typical dispatch coverage times:</p>
+      </div>
+
+      <div class="coverage-grid">
+        
+        <div class="coverage-card reveal">
+          <span class="coverage-zone">East Delhi</span>
+          <h3 class="coverage-area">Patparganj Industrial Area</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~30 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="50">
+          <span class="coverage-zone">North East Delhi</span>
+          <h3 class="coverage-area">Yamuna Vihar</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~40 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="100">
+          <span class="coverage-zone">South East Delhi</span>
+          <h3 class="coverage-area">Okhla Ind. Area (Ph 1, 2 & 3)</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~45 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="150">
+          <span class="coverage-zone">South Delhi</span>
+          <h3 class="coverage-area">AIIMS & South Institutions</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~50 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="200">
+          <span class="coverage-zone">West Delhi</span>
+          <h3 class="coverage-area">Kirti Nagar</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~60 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="250">
+          <span class="coverage-zone">West Delhi</span>
+          <h3 class="coverage-area">Mayapuri Ind. Area Ph 1 & 2</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~60 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="300">
+          <span class="coverage-zone">North West Delhi</span>
+          <h3 class="coverage-area">Mangolpuri Industrial Area</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~70 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="350">
+          <span class="coverage-zone">Outer North Delhi</span>
+          <h3 class="coverage-area">Bawana Industrial Area</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~80 minutes
+          </div>
+        </div>
+
+        <div class="coverage-card reveal" data-delay="400">
+          <span class="coverage-zone">Outer North Delhi</span>
+          <h3 class="coverage-area">Narela Industrial Area</h3>
+          <div class="coverage-time">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            ~85 minutes
+          </div>
+        </div>
+
+      </div>
+
+      <div class="coverage-footer reveal" data-delay="100">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <p>We also dispatch to <strong>Noida, Greater Noida, Ghaziabad, Gurgaon, and Faridabad</strong> on the same day.</p>
       </div>
 
     </div>
@@ -219,7 +385,7 @@
             <svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
           </button>
           <div class="faq-answer">
-            <p>Our price starts from ₹2,500/-* INR. We are available 24/7 for your assistance.</p>
+            <p>Our price starts from INR 2,500/-*. We are available 24/7 for your assistance.</p>
           </div>
         </div>
 
