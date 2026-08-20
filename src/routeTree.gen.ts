@@ -10,33 +10,44 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ForkliftForRentInDelhiIndexRouteImport } from './routes/forklift-for-rent-in-delhi/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ForkliftForRentInDelhiIndexRoute =
+  ForkliftForRentInDelhiIndexRouteImport.update({
+    id: '/forklift-for-rent-in-delhi/',
+    path: '/forklift-for-rent-in-delhi/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/forklift-for-rent-in-delhi/': typeof ForkliftForRentInDelhiIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/forklift-for-rent-in-delhi': typeof ForkliftForRentInDelhiIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/forklift-for-rent-in-delhi/': typeof ForkliftForRentInDelhiIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/forklift-for-rent-in-delhi/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/forklift-for-rent-in-delhi'
+  id: '__root__' | '/' | '/forklift-for-rent-in-delhi/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ForkliftForRentInDelhiIndexRoute: typeof ForkliftForRentInDelhiIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +59,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/forklift-for-rent-in-delhi/': {
+      id: '/forklift-for-rent-in-delhi/'
+      path: '/forklift-for-rent-in-delhi'
+      fullPath: '/forklift-for-rent-in-delhi/'
+      preLoaderRoute: typeof ForkliftForRentInDelhiIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ForkliftForRentInDelhiIndexRoute: ForkliftForRentInDelhiIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
